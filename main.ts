@@ -1,15 +1,14 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showString("" + (text_list[0]))
+	
 })
 input.onButtonPressed(Button.AB, function () {
-    for (let value of text_list) {
-        index = randint(0, 12)
-        basic.showString("" + (text_list.removeAt(index)))
+    for (let index = 0; index <= 12; index++) {
+        basic.showString("" + (text_list[index]))
     }
 })
 input.onButtonPressed(Button.B, function () {
     index = randint(0, 12)
-    basic.showString("" + (text_list.removeAt(index)))
+    basic.showString("Hello!")
 })
 let index = 0
 let text_list: string[] = []
@@ -22,9 +21,9 @@ text_list = [
 "!1"
 ]
 text_list = [
-"pink floyd",
+"PF",
 "acdc",
-"nirvana",
+"NRVN",
 "TRS",
 "queen",
 "the beatles????"
